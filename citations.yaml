@@ -1,0 +1,295 @@
+# Sekrd compliance citation corpus — auto-generated, do not edit by hand.
+# Source of truth: github.com/sekrdcom/sekrd internal/compliance_audit/corpus/
+# Sync script: scripts/sync-public-rules.sh
+
+# Total citations: 48 across 5 jurisdictions
+
+citations:
+  ccpa-1798-100:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.100"
+    title: "Right to know what personal information is collected"
+    quote: "A consumer shall have the right to request that a business that collects a consumer's personal information disclose to that consumer the categories and specific pieces of personal information the business has collected."
+    web_app_relevance: "App must support data-disclosure requests for California residents."
+  ccpa-1798-105:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.105"
+    title: "Right to delete personal information"
+    quote: "A consumer shall have the right to request that a business delete any personal information about the consumer which the business has collected from the consumer."
+    web_app_relevance: "Account deletion mechanism (right to delete) is required."
+  ccpa-1798-110:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.110"
+    title: "Right to know — categories and sources"
+    quote: "A consumer shall have the right to request that a business that collects personal information about the consumer disclose to the consumer the categories of personal information it has collected, the categories of sources, the business or commercial purpose, and the categories of third parties with whom the business shares personal information."
+    web_app_relevance: "Privacy policy must disclose data categories, sources, purposes, and recipients in CCPA-specific structure."
+  ccpa-1798-120:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.120"
+    title: "Right to opt-out of sale or sharing"
+    quote: "A consumer shall have the right, at any time, to direct a business that sells or shares personal information about the consumer to third parties not to sell or share the consumer's personal information."
+    web_app_relevance: "If app uses ad networks (Meta Pixel, Google Ads), 'sells/shares' likely applies — needs opt-out."
+  ccpa-1798-125:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.125"
+    title: "Right to non-discrimination"
+    quote: "A business shall not discriminate against a consumer because the consumer exercised any of the consumer's rights under this title, including by denying goods or services, charging different prices, or providing a different level of quality."
+    web_app_relevance: "Cookie wall (must accept all cookies to access content) violates this."
+  ccpa-1798-130:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.130"
+    title: "Notice at collection / privacy policy contents"
+    quote: "A business shall, in a form that is reasonably accessible to consumers, make available the categories of personal information it has collected, sold, or shared in the preceding 12 months, and the consumer's rights under this title."
+    web_app_relevance: "Privacy policy must have CCPA-specific section listing categories collected/sold in past 12 months."
+  ccpa-1798-135:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.135"
+    title: "Methods for opting out — Do Not Sell or Share My Personal Information link"
+    quote: "A business that sells or shares consumers' personal information shall provide a clear and conspicuous link on the business's internet homepage, titled 'Do Not Sell or Share My Personal Information', that enables a consumer to opt out."
+    web_app_relevance: "Homepage link with this exact wording is required if app sells/shares data. GPC signal must also be honored."
+  ccpa-1798-140-o:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.140(o)"
+    title: "Definition: personal information"
+    quote: "Personal information means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household."
+    web_app_relevance: "CCPA scope includes IP addresses, device IDs, cookie IDs — broader than GDPR's 'personal data' in some readings."
+  ccpa-1798-150:
+    jurisdiction: us_ccpa
+    article: "Cal. Civ. Code §1798.150"
+    title: "Civil action for data breach"
+    quote: "Any consumer whose nonencrypted and nonredacted personal information is subject to an unauthorized access and exfiltration, theft, or disclosure as a result of the business's violation of the duty to implement and maintain reasonable security procedures may institute a civil action."
+    web_app_relevance: "Breach of unencrypted PII opens private right of action — $100-$750 per consumer per incident."
+  cpra-1798-100-amended:
+    jurisdiction: us_cpra
+    article: "Cal. Civ. Code §1798.100 (CPRA-amended)"
+    title: "Data minimization principle"
+    quote: "A business's collection, use, retention, and sharing of a consumer's personal information shall be reasonably necessary and proportionate to achieve the purposes for which the personal information was collected or processed, or for another disclosed purpose that is compatible with the context in which the personal information was collected."
+    web_app_relevance: "Forms collecting more fields than the disclosed purpose justifies fail this. Mirror of GDPR Art. 5(1)(c)."
+  cpra-1798-106:
+    jurisdiction: us_cpra
+    article: "Cal. Civ. Code §1798.106"
+    title: "Right to correct inaccurate personal information"
+    quote: "A consumer shall have the right to request a business that maintains inaccurate personal information about the consumer to correct that inaccurate personal information."
+    web_app_relevance: "Account settings must allow user to correct their data — same as GDPR Art. 16."
+  cpra-1798-121:
+    jurisdiction: us_cpra
+    article: "Cal. Civ. Code §1798.121"
+    title: "Right to limit use and disclosure of sensitive personal information"
+    quote: "A consumer shall have the right, at any time, to direct a business that collects sensitive personal information about the consumer to limit its use of the consumer's sensitive personal information to that use which is necessary to perform the services or provide the goods reasonably expected by an average consumer."
+    web_app_relevance: "Apps collecting precise geolocation, government IDs, biometrics, health data, contents of messages must offer 'Limit Use of My Sensitive Personal Information' link alongside Do Not Sell."
+  cpra-1798-140-ae:
+    jurisdiction: us_cpra
+    article: "Cal. Civ. Code §1798.140(ae)"
+    title: "Definition: sensitive personal information"
+    quote: "Sensitive personal information means: government identifiers (SSN, driver's license, state ID, passport); account login + password; precise geolocation; racial or ethnic origin, religious or philosophical beliefs, union membership; genetic data; biometric data for unique identification; data concerning health; data concerning sex life or sexual orientation; contents of mail, email, and text messages where the business is not the intended recipient."
+    web_app_relevance: "If app collects any of these, CPRA-specific sensitive-PI handling required."
+  cpra-1798-185:
+    jurisdiction: us_cpra
+    article: "Cal. Civ. Code §1798.185"
+    title: "CPPA regulations and audits"
+    quote: "The California Privacy Protection Agency shall adopt regulations to govern access and opt-out rights, audits of high-risk processing, automated decisionmaking, and consumer's rights to access information about automated decisions."
+    web_app_relevance: "Apps using automated decisionmaking (AI scoring, recommendation, eligibility) must disclose logic and offer opt-out under CPRA §1798.185 regs."
+  gdpr-art-12:
+    jurisdiction: eu_gdpr
+    article: "Art. 12"
+    title: "Transparent information"
+    quote: "The controller shall take appropriate measures to provide any information referred to in Articles 13 and 14 to the data subject in a concise, transparent, intelligible and easily accessible form, using clear and plain language."
+    web_app_relevance: "Privacy policy hidden in legalese or buried in footer fails this."
+  gdpr-art-13:
+    jurisdiction: eu_gdpr
+    article: "Art. 13"
+    title: "Information to be provided when data is collected from the data subject"
+    quote: "Where personal data are collected from the data subject, the controller shall provide the data subject with the identity and contact details of the controller, the purposes of the processing, the legal basis, the recipients, the period for storage, and the existence of data subject rights."
+    web_app_relevance: "Missing privacy policy or one without controller identity / purposes / retention violates this."
+  gdpr-art-15:
+    jurisdiction: eu_gdpr
+    article: "Art. 15"
+    title: "Right of access"
+    quote: "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and access to that data."
+    web_app_relevance: "App must provide a way for users to request their data — DSAR endpoint or process."
+  gdpr-art-16:
+    jurisdiction: eu_gdpr
+    article: "Art. 16"
+    title: "Right to rectification"
+    quote: "The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her."
+    web_app_relevance: "Account settings must allow user to correct their data."
+  gdpr-art-17:
+    jurisdiction: eu_gdpr
+    article: "Art. 17"
+    title: "Right to erasure (right to be forgotten)"
+    quote: "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay."
+    web_app_relevance: "Account deletion mechanism is required when user has account."
+  gdpr-art-25:
+    jurisdiction: eu_gdpr
+    article: "Art. 25"
+    title: "Data protection by design and by default"
+    quote: "The controller shall implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles in an effective manner."
+    web_app_relevance: "Default settings must be privacy-protective; opt-in not opt-out for analytics."
+  gdpr-art-28:
+    jurisdiction: eu_gdpr
+    article: "Art. 28"
+    title: "Processor"
+    quote: "Where processing is to be carried out on behalf of a controller, the controller shall use only processors providing sufficient guarantees, governed by a contract."
+    web_app_relevance: "Privacy policy must list third-party processors (Google Analytics, Stripe, Supabase, etc.) and have a DPA with each."
+  gdpr-art-32:
+    jurisdiction: eu_gdpr
+    article: "Art. 32"
+    title: "Security of processing"
+    quote: "The controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including the pseudonymisation and encryption of personal data."
+    web_app_relevance: "PII in localStorage, missing TLS, exposed S3 buckets, default RLS USING(true) all fail this."
+  gdpr-art-33:
+    jurisdiction: eu_gdpr
+    article: "Art. 33"
+    title: "Notification of a personal data breach to the supervisory authority"
+    quote: "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority."
+    web_app_relevance: "Internal incident response plan should commit to 72h notification timeline."
+  gdpr-art-44:
+    jurisdiction: eu_gdpr
+    article: "Art. 44"
+    title: "General principle for transfers"
+    quote: "Any transfer of personal data which are undergoing processing or are intended for processing after transfer to a third country or to an international organisation shall take place only if the controller and processor comply with the conditions laid down in this Chapter."
+    web_app_relevance: "Privacy policy must disclose international transfers (EU→US Stripe, etc.) and the safeguard mechanism (SCC, adequacy decision)."
+  gdpr-art-5-1-a:
+    jurisdiction: eu_gdpr
+    article: "Art. 5(1)(a)"
+    title: "Principle: lawfulness, fairness, transparency"
+    quote: "Personal data shall be processed lawfully, fairly and in a transparent manner in relation to the data subject (lawfulness, fairness and transparency)."
+    web_app_relevance: "Privacy policy must clearly disclose what data is collected and why."
+  gdpr-art-5-1-b:
+    jurisdiction: eu_gdpr
+    article: "Art. 5(1)(b)"
+    title: "Purpose limitation"
+    quote: "Personal data shall be collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes."
+    web_app_relevance: "Each data category must have a stated purpose; analytics-then-marketing reuse without disclosure violates this."
+  gdpr-art-5-1-c:
+    jurisdiction: eu_gdpr
+    article: "Art. 5(1)(c)"
+    title: "Data minimisation"
+    quote: "Personal data shall be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed."
+    web_app_relevance: "Forms collecting more fields than the stated purpose justifies fail this principle."
+  gdpr-art-5-1-e:
+    jurisdiction: eu_gdpr
+    article: "Art. 5(1)(e)"
+    title: "Storage limitation"
+    quote: "Personal data shall be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed."
+    web_app_relevance: "Privacy policy must state retention period; indefinite storage violates this."
+  gdpr-art-5-1-f:
+    jurisdiction: eu_gdpr
+    article: "Art. 5(1)(f)"
+    title: "Integrity and confidentiality"
+    quote: "Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing."
+    web_app_relevance: "PII in localStorage, missing HTTPS, exposed admin endpoints all violate this."
+  gdpr-art-6-1-a:
+    jurisdiction: eu_gdpr
+    article: "Art. 6(1)(a)"
+    title: "Lawful basis: consent"
+    quote: "Processing shall be lawful only if and to the extent that at least one of the following applies: the data subject has given consent to the processing of his or her personal data for one or more specific purposes."
+    web_app_relevance: "Cookie consent must precede tracker fire when consent is the chosen lawful basis."
+  gdpr-art-6-1-b:
+    jurisdiction: eu_gdpr
+    article: "Art. 6(1)(b)"
+    title: "Lawful basis: contract"
+    quote: "Processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract."
+    web_app_relevance: "Customer account / billing data processing fits here without consent."
+  gdpr-art-6-1-f:
+    jurisdiction: eu_gdpr
+    article: "Art. 6(1)(f)"
+    title: "Lawful basis: legitimate interests"
+    quote: "Processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject."
+    web_app_relevance: "Most-cited basis for backend logging / fraud detection; requires balancing test in privacy policy."
+  gdpr-art-7:
+    jurisdiction: eu_gdpr
+    article: "Art. 7"
+    title: "Conditions for consent"
+    quote: "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented. Consent shall be freely given, specific, informed and unambiguous, given by a clear affirmative action."
+    web_app_relevance: "Pre-ticked checkboxes, cookie walls, implied consent from browsing all fail."
+  lgpd-art-18:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 18"
+    title: "Rights of the data subject"
+    quote: "The data subject has the right to obtain from the controller, in relation to the data subject's personal data: confirmation of processing, access to the data, correction of incomplete or inaccurate data, anonymization or deletion of unnecessary or excessive data, portability, deletion of personal data processed with consent, information about public and private entities with whom the controller has shared the data, and revocation of consent."
+    web_app_relevance: "Account settings page must support these rights — particularly deletion and data export."
+  lgpd-art-46:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 46"
+    title: "Security and good practices"
+    quote: "Processing agents shall adopt security, technical and administrative measures able to protect personal data from unauthorized accesses and accidental or unlawful situations of destruction, loss, alteration, communication or any type of improper or unlawful processing."
+    web_app_relevance: "Same baseline as GDPR Art. 32 — encryption, access controls, secure defaults."
+  lgpd-art-48:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 48"
+    title: "Notification of security incidents"
+    quote: "The controller shall communicate to the national authority and to the data subject the occurrence of a security incident that may create risk or relevant damage to the data subjects, within a reasonable time period."
+    web_app_relevance: "Breach notification to ANPD required — incident response plan must include this path."
+  lgpd-art-52:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 52"
+    title: "Administrative sanctions"
+    quote: "Data processing agents who, due to their infractions to the rules established by this Law, may be subject to administrative sanctions, including fines of up to two percent of company revenues, capped at fifty million reais per infraction."
+    web_app_relevance: "Sanction structure — useful for risk-cost discussion in privacy reviews."
+  lgpd-art-6:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 6"
+    title: "Principles of personal data processing"
+    quote: "Activities involving the processing of personal data shall observe good faith and the following principles: purpose, suitability, necessity, free access, data quality, transparency, security, prevention, non-discrimination, and accountability."
+    web_app_relevance: "Comparable to GDPR Art. 5 — privacy policy must reflect these principles."
+  lgpd-art-7:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 7"
+    title: "Legal bases for processing"
+    quote: "Processing of personal data may be carried out only in the following cases: with consent of the data subject; for compliance with a legal obligation; for the execution of public policies; for studies by research bodies; for the execution of a contract; for the regular exercise of rights in legal proceedings; for the protection of life or physical safety; for the protection of health; for legitimate interests; for the protection of credit."
+    web_app_relevance: "LGPD has 10 legal bases (more than GDPR's 6) — privacy notice should declare which apply."
+  lgpd-art-8:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 8"
+    title: "Conditions for consent"
+    quote: "Consent provided for in section I of art. 7 of this Law shall be given in writing or by another means that demonstrates the manifestation of will of the data subject. Consent shall be obtained for specific purposes, and generic authorizations for the processing of personal data shall be null and void."
+    web_app_relevance: "Pre-ticked consent boxes and bundle-consent for multiple purposes are explicitly invalid under LGPD."
+  lgpd-art-9:
+    jurisdiction: br_lgpd
+    article: "LGPD Art. 9"
+    title: "Information to be provided to the data subject"
+    quote: "The data subject is entitled to facilitated access to information regarding the processing of his/her data, which shall be made available in a clear, adequate, and noticeable manner — including the specific purpose, form and duration of processing, identification of the controller, and rights of the data subject."
+    web_app_relevance: "LGPD-specific privacy notice section required when targeting Brazilian users."
+  ukgdpr-art-13:
+    jurisdiction: uk_gdpr
+    article: "UK GDPR Art. 13"
+    title: "Information to be provided when data is collected"
+    quote: "Where personal data are collected from the data subject, the controller shall provide the data subject with the identity of the controller, the purposes of processing, the legal basis, the recipients, the storage period, and rights to access, rectification, erasure."
+    web_app_relevance: "Privacy policy contents requirement — UK ICO has its own guidance on layered notices."
+  ukgdpr-art-17:
+    jurisdiction: uk_gdpr
+    article: "UK GDPR Art. 17"
+    title: "Right to erasure"
+    quote: "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay."
+    web_app_relevance: "Account deletion mechanism required."
+  ukgdpr-art-32:
+    jurisdiction: uk_gdpr
+    article: "UK GDPR Art. 32"
+    title: "Security of processing"
+    quote: "The controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk."
+    web_app_relevance: "Same as EU GDPR Art. 32."
+  ukgdpr-art-6:
+    jurisdiction: uk_gdpr
+    article: "UK GDPR Art. 6"
+    title: "Lawfulness of processing"
+    quote: "Processing shall be lawful only if and to the extent that at least one of the following applies: consent; contract; legal obligation; vital interests; public task; legitimate interests."
+    web_app_relevance: "ICO actively enforces lawful basis declaration in privacy notices."
+  ukgdpr-art-7:
+    jurisdiction: uk_gdpr
+    article: "UK GDPR Art. 7"
+    title: "Conditions for consent"
+    quote: "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented. Consent shall be freely given, specific, informed and unambiguous."
+    web_app_relevance: "ICO has issued fines for cookie banner walls and pre-ticked boxes — Marriott (£18.4M), British Airways (£20M)."
+  ukgdpr-dpa2018-s170:
+    jurisdiction: uk_gdpr
+    article: "DPA 2018 §170"
+    title: "Unlawful obtaining of personal data"
+    quote: "It is an offence for a person knowingly or recklessly to obtain or disclose personal data without the consent of the controller, or to procure the disclosure of personal data to another person."
+    web_app_relevance: "Criminal offence layer — relevant for breach disclosure in incident response plans."
+  ukgdpr-pecr-reg-6:
+    jurisdiction: uk_gdpr
+    article: "PECR Regulation 6"
+    title: "Privacy and Electronic Communications Regulations — cookie consent"
+    quote: "A person shall not store or gain access to information stored, in the terminal equipment of a subscriber or user, unless the requirements of paragraph (2) are met. The requirements are that the subscriber or user is provided with clear and comprehensive information about the purposes of the storage of, or access to, that information and has given his or her consent."
+    web_app_relevance: "PECR (UK e-Privacy regs) is the primary cookie-consent enforcement tool in UK — sits alongside UK GDPR. ICO has been fining for cookie violations under PECR."
